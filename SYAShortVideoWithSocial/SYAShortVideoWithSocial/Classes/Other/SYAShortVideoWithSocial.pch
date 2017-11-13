@@ -1,0 +1,55 @@
+//
+//  SYAShortVideoWithSocial.pch
+//  SYAShortVideoWithSocial
+//
+//  Created by 乐家 on 2017/11/13.
+//  Copyright © 2017年 lejiakeji. All rights reserved.
+//
+
+#ifndef SYAShortVideoWithSocial_pch
+#define SYAShortVideoWithSocial_pch
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "XMNetworking.h"
+#import "UIColor+Hex.h"
+#import "UIImage+Image.h"
+#import "UIView+Frame.h"
+#import <Masonry/Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#ifdef __OBJC__
+/*********************屏幕适配*********************************/
+#define AppWidth [UIScreen mainScreen].bounds.size.width
+#define AppHeight [UIScreen mainScreen].bounds.size.height
+
+#define iPhone6P (AppHeight == 736)
+#define iPhone6 (AppHeight == 667)
+#define iPhone5 (AppHeight == 568)
+#define iPhone4 (AppHeight == 480)
+#define IS_VAILABLE_IOS8  ([[[UIDevice currentDevice] systemVersion] intValue] >= 8)
+#define IOS_VESION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define SYASharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define CURRENTVC [UIApplication sharedApplication].keyWindow.rootViewController.childViewControllers.lastObject
+
+/*********************屏幕适配*********************************/
+
+/*********************主要颜色*********************************/
+#define themeColor [UIColor colorWithRed:56/255.0 green:173/255.0 blue:255/255.0 alpha:1]
+// 16进制 #19C3A5
+#define deputyColor [UIColor colorWithRed:140/255.0 green:225/255.0 blue:219/255.0 alpha:1]
+#define themeBlackColor [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1]
+/*********************主要颜色*********************************/
+
+/*********************自定义LOG*********************************/
+#define LJFunc LJLog(@"%s",__func__)
+#ifdef DEBUG // 调试
+#define LJLog(...) NSLog(__VA_ARGS__)
+#else // 发布
+#define LJLog(...)
+#endif
+/*********************自定义LOG*********************************/
+
+#endif
+
+#endif /* SYAShortVideoWithSocial_pch */

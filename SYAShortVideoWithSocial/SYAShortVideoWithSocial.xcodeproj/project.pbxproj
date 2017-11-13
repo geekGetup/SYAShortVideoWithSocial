@@ -12,6 +12,21 @@
 		ABC75BE81FB6CBA4000D172F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC75BE61FB6CBA4000D172F /* LaunchScreen.storyboard */; };
 		ABC75C1F1FB6CF55000D172F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC75BF31FB6CF55000D172F /* AppDelegate.m */; };
 		ABC75C211FB6CF55000D172F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC75C091FB6CF55000D172F /* main.m */; };
+		ABD6DC4E1FB9768A00283789 /* channelDataBackgroudImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD6DC4D1FB9768A00283789 /* channelDataBackgroudImage.png */; };
+		ABD742DC1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742DB1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m */; };
+		ABD742DF1FB946C30054D0CD /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742DD1FB946C20054D0CD /* UIView+Frame.m */; };
+		ABD742E21FB946D70054D0CD /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742E01FB946D70054D0CD /* UIImage+Image.m */; };
+		ABD742E51FB947340054D0CD /* SYAShortVideoBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742E41FB947340054D0CD /* SYAShortVideoBaseViewModel.m */; };
+		ABD742E91FB948890054D0CD /* SYANavitationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742E81FB948890054D0CD /* SYANavitationController.m */; };
+		ABD742EC1FB94A370054D0CD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742EB1FB94A360054D0CD /* UIColor+Hex.m */; };
+		ABD742F71FB94AD30054D0CD /* XMCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742F01FB94AD30054D0CD /* XMCenter.m */; };
+		ABD742F81FB94AD30054D0CD /* XMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742F31FB94AD30054D0CD /* XMEngine.m */; };
+		ABD742F91FB94AD30054D0CD /* XMRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742F51FB94AD30054D0CD /* XMRequest.m */; };
+		ABD742FC1FB94B460054D0CD /* SYAHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742FB1FB94B460054D0CD /* SYAHomePageViewController.m */; };
+		ABD742FF1FB94BAF0054D0CD /* SYAMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742FE1FB94BAF0054D0CD /* SYAMessageViewController.m */; };
+		ABD743021FB94BC30054D0CD /* SYAMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD743011FB94BC30054D0CD /* SYAMineSettingViewController.m */; };
+		ABD743051FB94BD30054D0CD /* SYAFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD743041FB94BD30054D0CD /* SYAFoundViewController.m */; };
+		ABD743081FB94BF80054D0CD /* SYAPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD743071FB94BF80054D0CD /* SYAPublishViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +39,39 @@
 		ABC75BF31FB6CF55000D172F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ABC75BFE1FB6CF55000D172F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC75C091FB6CF55000D172F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABD6DC4D1FB9768A00283789 /* channelDataBackgroudImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channelDataBackgroudImage.png; sourceTree = "<group>"; };
+		ABD742D31FB934180054D0CD /* SYAShortVideoWithSocial.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAShortVideoWithSocial.pch; sourceTree = "<group>"; };
+		ABD742DA1FB9438F0054D0CD /* SYAShortVideoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAShortVideoBaseViewController.h; sourceTree = "<group>"; };
+		ABD742DB1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAShortVideoBaseViewController.m; sourceTree = "<group>"; };
+		ABD742DD1FB946C20054D0CD /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		ABD742DE1FB946C30054D0CD /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		ABD742E01FB946D70054D0CD /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		ABD742E11FB946D70054D0CD /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		ABD742E31FB947340054D0CD /* SYAShortVideoBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAShortVideoBaseViewModel.h; sourceTree = "<group>"; };
+		ABD742E41FB947340054D0CD /* SYAShortVideoBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAShortVideoBaseViewModel.m; sourceTree = "<group>"; };
+		ABD742E61FB947C80054D0CD /* SYAShortVideoBaseViewControllProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAShortVideoBaseViewControllProtocol.h; sourceTree = "<group>"; };
+		ABD742E71FB948890054D0CD /* SYANavitationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYANavitationController.h; sourceTree = "<group>"; };
+		ABD742E81FB948890054D0CD /* SYANavitationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYANavitationController.m; sourceTree = "<group>"; };
+		ABD742EA1FB94A360054D0CD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		ABD742EB1FB94A360054D0CD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		ABD742EF1FB94AD30054D0CD /* XMCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCenter.h; sourceTree = "<group>"; };
+		ABD742F01FB94AD30054D0CD /* XMCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCenter.m; sourceTree = "<group>"; };
+		ABD742F11FB94AD30054D0CD /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
+		ABD742F21FB94AD30054D0CD /* XMEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMEngine.h; sourceTree = "<group>"; };
+		ABD742F31FB94AD30054D0CD /* XMEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMEngine.m; sourceTree = "<group>"; };
+		ABD742F41FB94AD30054D0CD /* XMRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRequest.h; sourceTree = "<group>"; };
+		ABD742F51FB94AD30054D0CD /* XMRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRequest.m; sourceTree = "<group>"; };
+		ABD742F61FB94AD30054D0CD /* XMNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNetworking.h; sourceTree = "<group>"; };
+		ABD742FA1FB94B460054D0CD /* SYAHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAHomePageViewController.h; sourceTree = "<group>"; };
+		ABD742FB1FB94B460054D0CD /* SYAHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAHomePageViewController.m; sourceTree = "<group>"; };
+		ABD742FD1FB94BAF0054D0CD /* SYAMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAMessageViewController.h; sourceTree = "<group>"; };
+		ABD742FE1FB94BAF0054D0CD /* SYAMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAMessageViewController.m; sourceTree = "<group>"; };
+		ABD743001FB94BC30054D0CD /* SYAMineSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAMineSettingViewController.h; sourceTree = "<group>"; };
+		ABD743011FB94BC30054D0CD /* SYAMineSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAMineSettingViewController.m; sourceTree = "<group>"; };
+		ABD743031FB94BD30054D0CD /* SYAFoundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAFoundViewController.h; sourceTree = "<group>"; };
+		ABD743041FB94BD30054D0CD /* SYAFoundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAFoundViewController.m; sourceTree = "<group>"; };
+		ABD743061FB94BF80054D0CD /* SYAPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAPublishViewController.h; sourceTree = "<group>"; };
+		ABD743071FB94BF80054D0CD /* SYAPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAPublishViewController.m; sourceTree = "<group>"; };
 		C476391CCD524CC29EE97EA8 /* libPods-SYAShortVideoWithSocial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYAShortVideoWithSocial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +149,8 @@
 		ABC75BF51FB6CF55000D172F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABD743031FB94BD30054D0CD /* SYAFoundViewController.h */,
+				ABD743041FB94BD30054D0CD /* SYAFoundViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +190,9 @@
 		ABC75BFA1FB6CF55000D172F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABD6DC4D1FB9768A00283789 /* channelDataBackgroudImage.png */,
+				ABD742FA1FB94B460054D0CD /* SYAHomePageViewController.h */,
+				ABD742FB1FB94B460054D0CD /* SYAHomePageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +271,11 @@
 		ABC75C051FB6CF55000D172F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABD742DA1FB9438F0054D0CD /* SYAShortVideoBaseViewController.h */,
+				ABD742DB1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m */,
+				ABD742E61FB947C80054D0CD /* SYAShortVideoBaseViewControllProtocol.h */,
+				ABD742E71FB948890054D0CD /* SYANavitationController.h */,
+				ABD742E81FB948890054D0CD /* SYANavitationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +297,8 @@
 		ABC75C081FB6CF55000D172F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ABD742E31FB947340054D0CD /* SYAShortVideoBaseViewModel.h */,
+				ABD742E41FB947340054D0CD /* SYAShortVideoBaseViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +317,8 @@
 		ABC75C0B1FB6CF55000D172F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABD742FD1FB94BAF0054D0CD /* SYAMessageViewController.h */,
+				ABD742FE1FB94BAF0054D0CD /* SYAMessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +358,8 @@
 		ABC75C101FB6CF55000D172F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABD743001FB94BC30054D0CD /* SYAMineSettingViewController.h */,
+				ABD743011FB94BC30054D0CD /* SYAMineSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,6 +391,7 @@
 				ABC75C151FB6CF55000D172F /* Category */,
 				ABC75C161FB6CF55000D172F /* Lib */,
 				ABC75C171FB6CF55000D172F /* Tool */,
+				ABD742D31FB934180054D0CD /* SYAShortVideoWithSocial.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -334,6 +399,12 @@
 		ABC75C151FB6CF55000D172F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				ABD742EA1FB94A360054D0CD /* UIColor+Hex.h */,
+				ABD742EB1FB94A360054D0CD /* UIColor+Hex.m */,
+				ABD742DE1FB946C30054D0CD /* UIView+Frame.h */,
+				ABD742DD1FB946C20054D0CD /* UIView+Frame.m */,
+				ABD742E11FB946D70054D0CD /* UIImage+Image.h */,
+				ABD742E01FB946D70054D0CD /* UIImage+Image.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -341,6 +412,7 @@
 		ABC75C161FB6CF55000D172F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				ABD742ED1FB94AD30054D0CD /* XMNetworking */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -366,6 +438,8 @@
 		ABC75C191FB6CF55000D172F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABD743061FB94BF80054D0CD /* SYAPublishViewController.h */,
+				ABD743071FB94BF80054D0CD /* SYAPublishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,6 +463,29 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ABD742ED1FB94AD30054D0CD /* XMNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				ABD742EE1FB94AD30054D0CD /* Core */,
+				ABD742F61FB94AD30054D0CD /* XMNetworking.h */,
+			);
+			path = XMNetworking;
+			sourceTree = "<group>";
+		};
+		ABD742EE1FB94AD30054D0CD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ABD742EF1FB94AD30054D0CD /* XMCenter.h */,
+				ABD742F01FB94AD30054D0CD /* XMCenter.m */,
+				ABD742F11FB94AD30054D0CD /* XMConst.h */,
+				ABD742F21FB94AD30054D0CD /* XMEngine.h */,
+				ABD742F31FB94AD30054D0CD /* XMEngine.m */,
+				ABD742F41FB94AD30054D0CD /* XMRequest.h */,
+				ABD742F51FB94AD30054D0CD /* XMRequest.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		B74A831A317AB63F5A5EB0B7 /* Frameworks */ = {
@@ -471,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC75BE81FB6CBA4000D172F /* LaunchScreen.storyboard in Resources */,
+				ABD6DC4E1FB9768A00283789 /* channelDataBackgroudImage.png in Resources */,
 				ABC75BE51FB6CBA4000D172F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +628,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD742F91FB94AD30054D0CD /* XMRequest.m in Sources */,
+				ABD742E91FB948890054D0CD /* SYANavitationController.m in Sources */,
+				ABD742E51FB947340054D0CD /* SYAShortVideoBaseViewModel.m in Sources */,
+				ABD742DF1FB946C30054D0CD /* UIView+Frame.m in Sources */,
+				ABD743021FB94BC30054D0CD /* SYAMineSettingViewController.m in Sources */,
+				ABD743051FB94BD30054D0CD /* SYAFoundViewController.m in Sources */,
+				ABD742FC1FB94B460054D0CD /* SYAHomePageViewController.m in Sources */,
+				ABD742E21FB946D70054D0CD /* UIImage+Image.m in Sources */,
+				ABD743081FB94BF80054D0CD /* SYAPublishViewController.m in Sources */,
+				ABD742DC1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m in Sources */,
+				ABD742FF1FB94BAF0054D0CD /* SYAMessageViewController.m in Sources */,
+				ABD742EC1FB94A370054D0CD /* UIColor+Hex.m in Sources */,
+				ABD742F81FB94AD30054D0CD /* XMEngine.m in Sources */,
+				ABD742F71FB94AD30054D0CD /* XMCenter.m in Sources */,
 				ABC75C211FB6CF55000D172F /* main.m in Sources */,
 				ABC75C1F1FB6CF55000D172F /* AppDelegate.m in Sources */,
 			);
@@ -660,6 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QHWBEW6WU7;
+				GCC_PREFIX_HEADER = SYAShortVideoWithSocial/Classes/Other/SYAShortVideoWithSocial.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/SYAShortVideoWithSocial/Classes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lejiakeji.SYAShortVideoWithSocial;
@@ -675,6 +788,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QHWBEW6WU7;
+				GCC_PREFIX_HEADER = SYAShortVideoWithSocial/Classes/Other/SYAShortVideoWithSocial.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/SYAShortVideoWithSocial/Classes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lejiakeji.SYAShortVideoWithSocial;
