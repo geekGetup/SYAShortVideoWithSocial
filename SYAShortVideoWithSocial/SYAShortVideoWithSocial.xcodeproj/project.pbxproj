@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50CC126D7FAB83A278BA370E /* libPods-SYAShortVideoWithSocial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C476391CCD524CC29EE97EA8 /* libPods-SYAShortVideoWithSocial.a */; };
 		ABC75BE51FB6CBA4000D172F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC75BE41FB6CBA4000D172F /* Assets.xcassets */; };
 		ABC75BE81FB6CBA4000D172F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC75BE61FB6CBA4000D172F /* LaunchScreen.storyboard */; };
 		ABC75C1F1FB6CF55000D172F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC75BF31FB6CF55000D172F /* AppDelegate.m */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A830870134FB5B2762591F4 /* Pods-SYAShortVideoWithSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYAShortVideoWithSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYAShortVideoWithSocial/Pods-SYAShortVideoWithSocial.release.xcconfig"; sourceTree = "<group>"; };
+		89D54AC8C3E14D8E9EAB2A33 /* Pods-SYAShortVideoWithSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYAShortVideoWithSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYAShortVideoWithSocial/Pods-SYAShortVideoWithSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		ABC75BD81FB6CBA4000D172F /* SYAShortVideoWithSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYAShortVideoWithSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC75BE41FB6CBA4000D172F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC75BE71FB6CBA4000D172F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		ABC75BF31FB6CF55000D172F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ABC75BFE1FB6CF55000D172F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC75C091FB6CF55000D172F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C476391CCD524CC29EE97EA8 /* libPods-SYAShortVideoWithSocial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYAShortVideoWithSocial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CC126D7FAB83A278BA370E /* libPods-SYAShortVideoWithSocial.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,8 @@
 			children = (
 				ABC75BDA1FB6CBA4000D172F /* SYAShortVideoWithSocial */,
 				ABC75BD91FB6CBA4000D172F /* Products */,
+				FDCA486737B1C0504775BF85 /* Pods */,
+				B74A831A317AB63F5A5EB0B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 1;
@@ -384,6 +391,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B74A831A317AB63F5A5EB0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C476391CCD524CC29EE97EA8 /* libPods-SYAShortVideoWithSocial.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDCA486737B1C0504775BF85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89D54AC8C3E14D8E9EAB2A33 /* Pods-SYAShortVideoWithSocial.debug.xcconfig */,
+				5A830870134FB5B2762591F4 /* Pods-SYAShortVideoWithSocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,9 +415,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABC75BEE1FB6CBA4000D172F /* Build configuration list for PBXNativeTarget "SYAShortVideoWithSocial" */;
 			buildPhases = (
+				C20CAD042DDD4D2979960DDF /* [CP] Check Pods Manifest.lock */,
 				ABC75BD41FB6CBA3000D172F /* Sources */,
 				ABC75BD51FB6CBA3000D172F /* Frameworks */,
 				ABC75BD61FB6CBA3000D172F /* Resources */,
+				5DDF873816477671DCF47F4A /* [CP] Embed Pods Frameworks */,
+				E61D9FB116830D9976F3E3B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -449,6 +476,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DDF873816477671DCF47F4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYAShortVideoWithSocial/Pods-SYAShortVideoWithSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20CAD042DDD4D2979960DDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E61D9FB116830D9976F3E3B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYAShortVideoWithSocial/Pods-SYAShortVideoWithSocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABC75BD41FB6CBA3000D172F /* Sources */ = {
@@ -580,6 +655,7 @@
 		};
 		ABC75BEF1FB6CBA4000D172F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D54AC8C3E14D8E9EAB2A33 /* Pods-SYAShortVideoWithSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +670,7 @@
 		};
 		ABC75BF01FB6CBA4000D172F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A830870134FB5B2762591F4 /* Pods-SYAShortVideoWithSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
