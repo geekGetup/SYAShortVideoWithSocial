@@ -5,6 +5,12 @@ target 'SYAShortVideoWithSocial' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   #use_frameworks!
 pod 'PLShortVideoKit', '~> 1.5.0'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'SDWebImage', '~> 3.8.1'
+pod 'MJExtension', '~> 3.0.10'
+pod 'SVProgressHUD', '~> 2.0.3'
+pod 'IQKeyboardManager', '~> 5.0.0'
+pod 'Masonry', '~> 1.1.0'
   # Pods for SYAShortVideoWithSocial
 
 end
