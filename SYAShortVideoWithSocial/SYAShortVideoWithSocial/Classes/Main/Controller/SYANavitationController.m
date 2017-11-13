@@ -41,38 +41,44 @@
     
 #pragma mark - UIGestureRecognizerDelegate
     // 控制手势是否触发
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
-    {
-        // 在根控制器下，就不需要滑动手势，返回NO
-        return self.childViewControllers.count > 1;
-    }
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    // 在根控制器下，就不需要滑动手势，返回NO
+    return self.childViewControllers.count > 1;
+}
     
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-    {
-        // 根控制器不需要设置返回按钮
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    // 根控制器不需要设置返回按钮
         
-        if (self.childViewControllers.count) { // 非根控制器
-            UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            [backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-            [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    if (self.childViewControllers.count) { // 非根控制器
+        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
             // 注意:一定要先计算按钮尺寸，在设置contentEdgeInsets
-            [backButton sizeToFit];
+        [backButton sizeToFit];
             // 目的：把按钮往左边挪动
-            backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
             // 覆盖系统返回按钮
-            viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-            viewController.hidesBottomBarWhenPushed = YES;
-        }
-        // 注意。一定要记得调用super,
-        [super pushViewController:viewController animated:animated];
-        
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+        viewController.hidesBottomBarWhenPushed = YES;
     }
+        // 注意。一定要记得调用super,
+    [super pushViewController:viewController animated:animated];
+        
+}
     
     // pop
-- (void)back
-    {
-        [self popViewControllerAnimated:YES];
-    }
+- (void)back{
+    [self popViewControllerAnimated:YES];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    UIViewController *topVC = self.topViewController;
+    return [topVC prefersStatusBarHidden];
+}
+
+- (UIViewController *)childViewControllerForStatusBarStyle{
+    return self.topViewController;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -1,0 +1,15 @@
+//
+//  SYAHomePageSelectedSeriesMenuView.h
+//  SYAShortVideoWithSocial
+//
+//  Created by 乐家 on 2017/11/13.
+//  Copyright © 2017年 lejiakeji. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SYAHomePageSelectedSeriesMenuView : UIView
+- (instancetype)initWithFrame:(CGRect)frame titleArray:(NSArray *)titleArray;
+/** 点击按钮 */
+@property (nonatomic, copy) void(^btnClickBlock)(NSInteger btnIndex);
+@end

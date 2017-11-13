@@ -13,6 +13,9 @@
 		ABC75C1F1FB6CF55000D172F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC75BF31FB6CF55000D172F /* AppDelegate.m */; };
 		ABC75C211FB6CF55000D172F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC75C091FB6CF55000D172F /* main.m */; };
 		ABD6DC4E1FB9768A00283789 /* channelDataBackgroudImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD6DC4D1FB9768A00283789 /* channelDataBackgroudImage.png */; };
+		ABD6DC511FB999DE00283789 /* SYANoHighlightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DC501FB999DE00283789 /* SYANoHighlightButton.m */; };
+		ABD6DC541FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DC531FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.m */; };
+		ABD6DC571FB9A9FE00283789 /* SYASelectedCameraStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6DC561FB9A9FE00283789 /* SYASelectedCameraStyleView.m */; };
 		ABD742DC1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742DB1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m */; };
 		ABD742DF1FB946C30054D0CD /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742DD1FB946C20054D0CD /* UIView+Frame.m */; };
 		ABD742E21FB946D70054D0CD /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD742E01FB946D70054D0CD /* UIImage+Image.m */; };
@@ -40,6 +43,12 @@
 		ABC75BFE1FB6CF55000D172F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC75C091FB6CF55000D172F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABD6DC4D1FB9768A00283789 /* channelDataBackgroudImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channelDataBackgroudImage.png; sourceTree = "<group>"; };
+		ABD6DC4F1FB999DE00283789 /* SYANoHighlightButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYANoHighlightButton.h; sourceTree = "<group>"; };
+		ABD6DC501FB999DE00283789 /* SYANoHighlightButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYANoHighlightButton.m; sourceTree = "<group>"; };
+		ABD6DC521FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAHomePageSelectedSeriesMenuView.h; sourceTree = "<group>"; };
+		ABD6DC531FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAHomePageSelectedSeriesMenuView.m; sourceTree = "<group>"; };
+		ABD6DC551FB9A9FE00283789 /* SYASelectedCameraStyleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYASelectedCameraStyleView.h; sourceTree = "<group>"; };
+		ABD6DC561FB9A9FE00283789 /* SYASelectedCameraStyleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYASelectedCameraStyleView.m; sourceTree = "<group>"; };
 		ABD742D31FB934180054D0CD /* SYAShortVideoWithSocial.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAShortVideoWithSocial.pch; sourceTree = "<group>"; };
 		ABD742DA1FB9438F0054D0CD /* SYAShortVideoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAShortVideoBaseViewController.h; sourceTree = "<group>"; };
 		ABD742DB1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAShortVideoBaseViewController.m; sourceTree = "<group>"; };
@@ -207,6 +216,10 @@
 		ABC75BFC1FB6CF55000D172F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABD6DC521FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.h */,
+				ABD6DC531FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.m */,
+				ABD6DC551FB9A9FE00283789 /* SYASelectedCameraStyleView.h */,
+				ABD6DC561FB9A9FE00283789 /* SYASelectedCameraStyleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +303,8 @@
 		ABC75C071FB6CF55000D172F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABD6DC4F1FB999DE00283789 /* SYANoHighlightButton.h */,
+				ABD6DC501FB999DE00283789 /* SYANoHighlightButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,8 +644,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD742F91FB94AD30054D0CD /* XMRequest.m in Sources */,
+				ABD6DC571FB9A9FE00283789 /* SYASelectedCameraStyleView.m in Sources */,
 				ABD742E91FB948890054D0CD /* SYANavitationController.m in Sources */,
 				ABD742E51FB947340054D0CD /* SYAShortVideoBaseViewModel.m in Sources */,
+				ABD6DC541FB99BB300283789 /* SYAHomePageSelectedSeriesMenuView.m in Sources */,
 				ABD742DF1FB946C30054D0CD /* UIView+Frame.m in Sources */,
 				ABD743021FB94BC30054D0CD /* SYAMineSettingViewController.m in Sources */,
 				ABD743051FB94BD30054D0CD /* SYAFoundViewController.m in Sources */,
@@ -638,6 +655,7 @@
 				ABD742E21FB946D70054D0CD /* UIImage+Image.m in Sources */,
 				ABD743081FB94BF80054D0CD /* SYAPublishViewController.m in Sources */,
 				ABD742DC1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m in Sources */,
+				ABD6DC511FB999DE00283789 /* SYANoHighlightButton.m in Sources */,
 				ABD742FF1FB94BAF0054D0CD /* SYAMessageViewController.m in Sources */,
 				ABD742EC1FB94A370054D0CD /* UIColor+Hex.m in Sources */,
 				ABD742F81FB94AD30054D0CD /* XMEngine.m in Sources */,
