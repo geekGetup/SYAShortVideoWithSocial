@@ -42,6 +42,7 @@
     CGFloat screenHeight = AppHeight;
     CGFloat topSpace = 20;
     CGFloat itemWidth = 50;
+    CGFloat leftItemWidth = 40;
     if (screenHeight == 812) {
         topSpace = 44;
     }
@@ -73,6 +74,13 @@
     };
     
     NSArray *imageNameArray = @[@"navCamera"];
+    CGFloat topLeftSelectedBtnSeriesMenuViewWidth = imageNameArray.count * leftItemWidth;
+    SYASelectedCameraStyleView *cameraStyleView = [[SYASelectedCameraStyleView alloc] initWithFrame:CGRectMake(0, 0, topLeftSelectedBtnSeriesMenuViewWidth, topMenuContentView.lj_height) titleArray:imageNameArray];
+    [topMenuContentView addSubview:cameraStyleView];
+    cameraStyleView.backgroundColor = [UIColor clearColor];
+    cameraStyleView.btnClickBlock = ^(NSInteger index){
+        
+    };
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
