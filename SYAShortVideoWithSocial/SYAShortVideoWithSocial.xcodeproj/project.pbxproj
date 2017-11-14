@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50CC126D7FAB83A278BA370E /* libPods-SYAShortVideoWithSocial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C476391CCD524CC29EE97EA8 /* libPods-SYAShortVideoWithSocial.a */; };
+		AB5029921FBA995F00C439F8 /* SYAGetCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5029911FBA995F00C439F8 /* SYAGetCurrentViewController.m */; };
+		AB5029951FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5029941FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.m */; };
 		ABC75BE51FB6CBA4000D172F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC75BE41FB6CBA4000D172F /* Assets.xcassets */; };
 		ABC75BE81FB6CBA4000D172F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC75BE61FB6CBA4000D172F /* LaunchScreen.storyboard */; };
 		ABC75C1F1FB6CF55000D172F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC75BF31FB6CF55000D172F /* AppDelegate.m */; };
@@ -35,6 +37,10 @@
 /* Begin PBXFileReference section */
 		5A830870134FB5B2762591F4 /* Pods-SYAShortVideoWithSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYAShortVideoWithSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYAShortVideoWithSocial/Pods-SYAShortVideoWithSocial.release.xcconfig"; sourceTree = "<group>"; };
 		89D54AC8C3E14D8E9EAB2A33 /* Pods-SYAShortVideoWithSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYAShortVideoWithSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYAShortVideoWithSocial/Pods-SYAShortVideoWithSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		AB5029901FBA995F00C439F8 /* SYAGetCurrentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAGetCurrentViewController.h; sourceTree = "<group>"; };
+		AB5029911FBA995F00C439F8 /* SYAGetCurrentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAGetCurrentViewController.m; sourceTree = "<group>"; };
+		AB5029931FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAPublishTopTitleContentView.h; sourceTree = "<group>"; };
+		AB5029941FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAPublishTopTitleContentView.m; sourceTree = "<group>"; };
 		ABC75BD81FB6CBA4000D172F /* SYAShortVideoWithSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYAShortVideoWithSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC75BE41FB6CBA4000D172F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC75BE71FB6CBA4000D172F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -435,6 +441,8 @@
 		ABC75C171FB6CF55000D172F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				AB5029901FBA995F00C439F8 /* SYAGetCurrentViewController.h */,
+				AB5029911FBA995F00C439F8 /* SYAGetCurrentViewController.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -469,6 +477,8 @@
 		ABC75C1B1FB6CF55000D172F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB5029931FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.h */,
+				AB5029941FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -652,12 +662,14 @@
 				ABD743021FB94BC30054D0CD /* SYAMineSettingViewController.m in Sources */,
 				ABD743051FB94BD30054D0CD /* SYAFoundViewController.m in Sources */,
 				ABD742FC1FB94B460054D0CD /* SYAHomePageViewController.m in Sources */,
+				AB5029951FBAD2DF00C439F8 /* SYAPublishTopTitleContentView.m in Sources */,
 				ABD742E21FB946D70054D0CD /* UIImage+Image.m in Sources */,
 				ABD743081FB94BF80054D0CD /* SYAPublishViewController.m in Sources */,
 				ABD742DC1FB9438F0054D0CD /* SYAShortVideoBaseViewController.m in Sources */,
 				ABD6DC511FB999DE00283789 /* SYANoHighlightButton.m in Sources */,
 				ABD742FF1FB94BAF0054D0CD /* SYAMessageViewController.m in Sources */,
 				ABD742EC1FB94A370054D0CD /* UIColor+Hex.m in Sources */,
+				AB5029921FBA995F00C439F8 /* SYAGetCurrentViewController.m in Sources */,
 				ABD742F81FB94AD30054D0CD /* XMEngine.m in Sources */,
 				ABD742F71FB94AD30054D0CD /* XMCenter.m in Sources */,
 				ABC75C211FB6CF55000D172F /* main.m in Sources */,

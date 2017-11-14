@@ -29,5 +29,9 @@
 + (UIImage *)createCodeImage:(NSString *)str;
 
 + (NSString *)base64WithImage:(UIImage *)image;
+/** 传入view,生成这个view的图片*/
++ (UIImage *)makeImageWithView:(UIView *)view withSize:(CGSize)size;
+
++(UIImage *)coreBlurImage:(UIImage *)image withBlurNumber:(CGFloat)blur;
 
 @end

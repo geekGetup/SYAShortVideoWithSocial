@@ -14,6 +14,7 @@
 #import "SYAPublishViewController.h"
 #import "SYAMessageViewController.h"
 #import "SYAMineSettingViewController.h"
+#import "SYAGetCurrentViewController.h"
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
@@ -79,6 +80,9 @@
     if (viewController == tabBarController.viewControllers[2]) {
         //点击中间tabbarItem，不切换，让当前页面跳转
         SYAPublishViewController *publishVC = [[SYAPublishViewController alloc] init];
+        UIViewController *vc = [SYAGetCurrentViewController getCurrentVC];
+        UIImage *img = [UIImage makeImageWithView:vc.view withSize:vc.view.bounds.size];
+        publishVC.backgroundImage = img;
         [viewController presentViewController:publishVC animated:YES completion:^{
             
         }];

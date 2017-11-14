@@ -9,5 +9,6 @@
 #import "SYAShortVideoBaseViewController.h"
 
 @interface SYAPublishViewController : SYAShortVideoBaseViewController
-
+/** 传递过来的图片 */
+@property (nonatomic, strong) UIImage *backgroundImage;
 @end
