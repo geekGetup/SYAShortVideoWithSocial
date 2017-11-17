@@ -47,6 +47,20 @@
     return theImage;
 }
 
++ (UIImage *)imageWithColorArray:(NSArray <UIColor *>*)colorArray size:(CGSize)size {
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = CGRectMake(0, 0, size.width, size.height);
+    gradientLayer.startPoint = CGPointMake(0, 0.0);
+    gradientLayer.endPoint = CGPointMake(1.0, 0.0);
+    NSMutableArray *gradientLayerColors = [NSMutableArray arrayWithArray:@[(__bridge id)colorArray.firstObject.CGColor, (__bridge id)colorArray.lastObject.CGColor]];
+    gradientLayer.colors = gradientLayerColors;
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    [gradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 //  保护图片边角, 拉伸中间部分
 + (UIImage *)resizableImageWithImage:(UIImage *) image {
     

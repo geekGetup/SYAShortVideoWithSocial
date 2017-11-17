@@ -17,6 +17,8 @@
 /** 根据颜色生成一张1*1的纯色图片*/
 + (UIImage *)imageWithColor:(UIColor *)color;
 
+/** 根据传入颜色数组生成一张指定大小的颜色渐变图片*/
++ (UIImage *)imageWithColorArray:(NSArray <UIColor *>*)colorArray size:(CGSize)size;
 /** 拉伸图片*/
 + (UIImage *)resizableImageWithImage:(UIImage *) image;
 

@@ -52,6 +52,8 @@
     if (self.childViewControllers.count) { // 非根控制器
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+        [backButton setTitle:@"返回" forState:UIControlStateNormal];
+        [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
             // 注意:一定要先计算按钮尺寸，在设置contentEdgeInsets
         [backButton sizeToFit];

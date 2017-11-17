@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "SYAShortVideoBaseViewControllProtocol.h"
 @interface SYAShortVideoBaseViewController : UIViewController<SYAShortVideoBaseViewControllProtocol>
-/** 回调函数 */
-@property (nonatomic, copy) void(^myBlock)(void);
+
 @end

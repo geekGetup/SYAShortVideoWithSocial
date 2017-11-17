@@ -8,6 +8,7 @@
 
 #import "SYAPublishViewController.h"
 #import "SYAPublishTopTitleContentView.h"
+#import "SYAShortVideoRecordViewController.h"
 @interface SYAPublishViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** 起始点*/
 @property (nonatomic, assign) CGPoint startPoint;
@@ -22,14 +23,25 @@ static NSString *cellID = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.startAlpha = 0.7;
+    LJLog(@"+++++++++%@",self.navigationController);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
 - (void)setupBaseUI {
     
     CGFloat topSpace = 20;
     if (AppHeight == 812) {
         topSpace = 44;
     }
+    @weakify(self);
     UIImageView *backgroundImageView = [[UIImageView alloc] init];
     [self.view addSubview:backgroundImageView];
     backgroundImageView.image = self.backgroundImage;
@@ -66,6 +78,16 @@ static NSString *cellID = @"cellID";
     SYAPublishTopTitleContentView *topTitleContentView = [[SYAPublishTopTitleContentView alloc] initWithFrame:CGRectMake(0, 0, AppWidth, 44)];
     topTitleContentView.backgroundColor = [UIColor clearColor];
     [topContentView addSubview:topTitleContentView];
+    topTitleContentView.btnClickBlock = ^(NSInteger index){
+        @strongify(self);
+        if (index == 0) {
+            // 上传视频
+        } else {
+            // 直接开拍
+            SYAShortVideoRecordViewController *recordVC = [[SYAShortVideoRecordViewController alloc] init];
+            [self.navigationController pushViewController:recordVC animated:YES];
+        }
+    };
     
     UIView *tempView = [[UIView alloc] init];
     tempView.frame = CGRectMake(0, CGRectGetMaxY(topTitleContentView.frame), AppWidth, 120);
@@ -82,7 +104,6 @@ static NSString *cellID = @"cellID";
         make.height.mas_equalTo(40);
     }];
     [cancelBtn setBackgroundColor:[UIColor colorWithRed:17/255.0 green:18/255.0 blue:27/255.0 alpha:1]];
-    @weakify(self);
     [[cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self);
         [self dismissViewControllerAnimated:YES completion:^{

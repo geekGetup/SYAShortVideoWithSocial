@@ -17,14 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    @weakify(self);
-    self.myBlock = ^(){
-        @strongify(self);
-        SYAPublishViewController *vc = [[SYAPublishViewController alloc] init];
-        [self presentViewController:vc animated:YES completion:^{
-            vc.view.backgroundColor = [UIColor redColor];
-        }];
-    };
     [self setupBaseUI];
     [self bindBaseViewModel];
 }
